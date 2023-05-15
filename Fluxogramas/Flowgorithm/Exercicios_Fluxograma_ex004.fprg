@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gustavo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-23 09:10:27 PM"/>
+        <attribute name="created" value="R3VzdGF2bztHVVNUQVZPOzIwMjMtMDItMjM7MDk6MDA6MzQgUE07MjU3Mg=="/>
+        <attribute name="edited" value="R3VzdGF2bztHVVNUQVZPOzIwMjMtMDItMjM7MDk6MTA6MjcgUE07MTsyNjgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="men" type="Integer" array="False" size=""/>
+            <declare name="women" type="Integer" array="False" size=""/>
+            <declare name="totalAlunos" type="Integer" array="False" size=""/>
+            <declare name="pMen" type="Integer" array="False" size=""/>
+            <declare name="pWomen" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o numero de homens matriculados na classe:&quot;" newline="True"/>
+            <input variable="men"/>
+            <output expression="&quot;Insira o numero de mulheres matriculadas na classe:&quot;" newline="True"/>
+            <input variable="women"/>
+            <assign variable="totalAlunos" expression="men+women"/>
+            <assign variable="pMen" expression="(men/totalAlunos)*100"/>
+            <assign variable="pWomen" expression="(women/totalAlunos)*100"/>
+            <output expression="&quot; O percentual de homens na classe &#233;: &quot; &amp;pMen &amp;&quot;%  e o percentual de mulheres na classe &#233;: &quot; &amp;pWomen&amp;&quot;%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gustavo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-01 11:14:56 PM"/>
+        <attribute name="created" value="R3VzdGF2bztHVVNUQVZPOzIwMjMtMDQtMDE7MTA6NTk6NDYgUE07MjU3OQ=="/>
+        <attribute name="edited" value="R3VzdGF2bztHVVNUQVZPOzIwMjMtMDQtMDE7MTE6MTQ6NTYgUE07MTsyNjgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nomeProduto" type="String" array="False" size=""/>
+            <declare name="valorProduto" type="Real" array="False" size=""/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <declare name="desconto" type="Real" array="False" size=""/>
+            <for variable="contador" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Escreva o nome do produto &quot;&amp;contador" newline="True"/>
+                <input variable="nomeProduto"/>
+                <output expression="&quot;Escreva o valor do produto &quot;&amp;contador" newline="True"/>
+                <input variable="valorProduto"/>
+                <assign variable="desconto" expression="valorProduto*0.5"/>
+                <output expression="&quot;O nome do produto &quot;&amp;contador&amp;&quot; &#233; &quot; &amp;nomeProduto&amp; &quot; e o valor dele com 50% de deconto &#233; &quot; &amp;desconto" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

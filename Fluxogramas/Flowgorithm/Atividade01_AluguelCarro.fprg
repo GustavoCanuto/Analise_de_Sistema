@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gustavo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-11 01:51:39 PM"/>
+        <attribute name="created" value="R3VzdGF2bztHVVNUQVZPOzIwMjMtMDMtMTE7MDE6NDA6NTUgUE07MjU2OQ=="/>
+        <attribute name="edited" value="R3VzdGF2bztHVVNUQVZPOzIwMjMtMDMtMTE7MDE6NTE6MzkgUE07MTsyNjgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="modeloCarro" type="String" array="False" size=""/>
+            <declare name="valorDiaria" type="Real" array="False" size=""/>
+            <declare name="qtdDias" type="Integer" array="False" size=""/>
+            <declare name="km" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o modelo do carro&quot;" newline="True"/>
+            <input variable="modeloCarro"/>
+            <output expression="&quot;Insira o valor da di&#225;ria para loca&#231;&#227;o&quot;" newline="True"/>
+            <input variable="valorDiaria"/>
+            <output expression="&quot;Insira a quantidade de dias de loca&#231;&#227;o&quot;" newline="True"/>
+            <input variable="qtdDias"/>
+            <output expression="&quot;Insira a quantidade de Km percorridos&quot;" newline="True"/>
+            <input variable="km"/>
+            <assign variable="total" expression="(km*0.20)+ qtdDias*valorDiaria"/>
+            <output expression="&quot;O modelo do seu carro &#233;: &quot; &amp;modeloCarro &amp;&quot; e o total a pagar &#233;: &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

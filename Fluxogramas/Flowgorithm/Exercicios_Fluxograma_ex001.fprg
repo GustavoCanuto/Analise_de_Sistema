@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gustavo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-23 07:55:57 PM"/>
+        <attribute name="created" value="R3VzdGF2bztHVVNUQVZPOzIwMjMtMDItMjM7MDc6MTg6MjMgUE07MjU3Nw=="/>
+        <attribute name="edited" value="R3VzdGF2bztHVVNUQVZPOzIwMjMtMDItMjM7MDc6NTU6NTcgUE07MTsyNjkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ValorCompra" type="Real" array="False" size=""/>
+            <declare name="ValorImpostoMunicipal" type="Real" array="False" size=""/>
+            <declare name="valorImpostoEstadual" type="Real" array="False" size=""/>
+            <declare name="totalmpostos" type="Real" array="False" size=""/>
+            <declare name="totalVenda" type="Real" array="False" size=""/>
+            <declare name="perImpostoEstadual" type="Real" array="False" size=""/>
+            <declare name="perImpostoMunicipal" type="Real" array="False" size=""/>
+            <assign variable="perImpostoEstadual" expression="0.04"/>
+            <assign variable="perImpostoMunicipal" expression="0.02"/>
+            <output expression="&quot;Digite o valor da compra&quot;" newline="True"/>
+            <input variable="valorCompra"/>
+            <assign variable="valorImpostoEstadual" expression="valorCompra*perImpostoEstadual"/>
+            <assign variable="valorImpostoMunicipal" expression="valorCompra*perImpostoMunicipal"/>
+            <assign variable="totalmpostos" expression="valorImpostoEstadual + valorImpostoMunicipal"/>
+            <assign variable="totalVenda" expression="valorCompra + totalmpostos"/>
+            <output expression="&quot;valor da compra: R$&quot; &amp;valorCompra" newline="True"/>
+            <output expression="&quot;Imposto estadual sobre vendas: R$&quot; &amp;valorImpostoEstadual" newline="True"/>
+            <output expression="&quot;Imposto Municipal sobre vendas: R$&quot; &amp;valorImpostoMunicipal" newline="True"/>
+            <output expression="&quot;Imposto total sobre vendas: R$&quot; &amp;totalmpostos" newline="True"/>
+            <output expression="&quot;totoal vendas: R$&quot; &amp;totalVenda" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
